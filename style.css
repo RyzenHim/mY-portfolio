@@ -504,7 +504,8 @@ padding-top: 50px;
   border-radius: 32px;
   padding: 3px;
   position: relative;
-  box-shadow: #ff0d008e 0px 0px 60px 15px;
+  /* box-shadow: #ff0d008e 0px 0px 20px 5px; */
+  /* border: 1px solid orangered; */
   transition: all 0.5s ease-in-out;
 }
 
@@ -646,6 +647,9 @@ padding-top: 50px;
 
 .cardsocial:hover {
   border-top-left-radius: 55px;
+  box-shadow: #ff0d008e 0px 0px 30px 5px;
+  border: 1px solid orangered;
+  /* transform: scale(); */
 }
 
 .cardsocial:hover .bottom {
@@ -944,9 +948,6 @@ padding-top: 50px;
   background-color: #ed261c;
   display: flex;
   justify-content: center;
-  /* position: fixed;
-  bottom: 0;
-  z-index: 100000; */
 }
 .end_footer_div{
   width: 50%;
