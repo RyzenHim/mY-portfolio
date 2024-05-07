@@ -209,10 +209,6 @@ body{
 
 .main_profile{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* height: calc(100vh-90px); */
-    /* height: 100vh; */
     width: 100%;
     background-color: rgb(35, 35, 41);
 }
@@ -220,16 +216,8 @@ body{
     padding-top: 30vh;
     height: 100vh;
     width:50%;
-    /* background-color: rgb(11, 11, 255); */
-    /* background-color: rgb(21, 41, 106); */
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column; */
     padding-bottom: 5vh;
-    /* padding-bottom: 100px; */
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -265,16 +253,10 @@ body{
 #btn_resume:hover,
 :focus {
   color: #ffffff;
-  /* background: #008cff; */
   background:orangered;
-  /* border: 1px solid #008cff; */
   border: 1px solid orangered;
-  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
-  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
   box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
     0 0 100px orangered;
-  /* box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-    0 0 100px #008cff; */
 }
 
 /* left side resume button end */
@@ -296,7 +278,6 @@ body{
     color: orangered;
     text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
     font-weight: 1000;
-    /* background-color: #0072b1 */
 }
 .intro_main h2{
     color: white;
@@ -308,25 +289,17 @@ body{
 .intro_main h4{
     color: white;
     font-size: 1.2vw;
-    /* text-align: center; */
     font-weight: 400;
     text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
-    /* background-color: #00acee; */
     padding-left: 10vw;
 }
 .main_profile_right{
     height:100vh;
     width: 50%;
-    /* background-color: rgb(35, 35, 41); */
-    /* background-color: rgb(64, 64, 186); */
     display: flex;
     align-items: end;
     /* align-items: center; */
     justify-content:end;
-    /* background-image: url(/files/model.png); */
-    /* background-size:cover; */
-  
-    /* background-repeat: no-repeat; */
 
 }
 .main_profile_right img{
@@ -397,7 +370,6 @@ body{
   align-items: center;
   justify-content: center;
   background-color: rgb(35, 35, 41);
-  /* background-color: rgb(41, 41, 229); */
   padding: 0 110px;
 }
 .bootstrap .b{
@@ -441,16 +413,12 @@ padding-top: 50px;
 
 .first_project {
   --font-color: orangered;
-  /* --font-color: #323232; */
-  /* --bg-color: #e0e0e0; */
   width: 250px;
   height: 350px;
   border-radius: 20px;
   background: var(--bg-color);
   box-shadow: -9px 9px 18px rgb(255, 42, 42),
               9px -9px 18px rgb(255, 68, 0);
-  /* box-shadow: -9px 9px 18px #5a5a5a,
-              9px -9px 18px #ffffff; */
   display: flex;  
   flex-direction: column;
   transition: .4s;
