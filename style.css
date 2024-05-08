@@ -390,8 +390,9 @@ body{
   padding-left:80px;
 }
 .project_des{
-  padding-left:30px ;
+padding-left:30px ;
 padding-top: 50px;
+content-visibility: auto;
 }
 
 .projectone{
@@ -498,7 +499,7 @@ padding-top: 50px;
 /* ****************************** */
 
 .cardsocial {
-  width: 100vw;
+  width : 100vw;
   height: 40vh;
   background: rgb(35, 35, 41);
   border-radius: 32px;
@@ -945,9 +946,13 @@ padding-top: 50px;
 .end_footer{
   width: 100%;
   height: 5vh;
-  background-color: #ed261c;
+  /* background-color: #ed261c; */
   display: flex;
   justify-content: center;
+  box-shadow: rgb(159, 148, 148) 0px 20px 30px 10px;
+  /* webkit-backdrop-filter: blur(8px); */
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  backdrop-filter: blur(8px) saturate(100%);
 }
 .end_footer_div{
   width: 50%;
@@ -956,23 +961,26 @@ padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .loader {
   width: fit-content;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: monospace;
   white-space: pre;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.2em;
   height: 1.2em;
   overflow: hidden;
+  color: orangered;
 }
 
 .loader:before {
-  content: "Himanshu\A⌰⌰⍜Hi...\A⌰⍜Him...\A⌰⍜⏃Hima...\A⌰⍜⏃⎅Himan...\A⌰⍜⏃⎅⟟Himansh...\A⌰⍜⏃⎅⟟⋏hHimanshu...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔";
+  content: "H.......\AHi......\AHim.....\AHima....\AHiman...\AHimans..\AHimansh.\AHimanshu\AHimanshu";
+  /* content: "Himanshu\A⌰⌰⍜Hi...\A⌰⍜Him...\A⌰⍜⏃Hima...\A⌰⍜⏃⎅Himan...\A⌰⍜⏃⎅⟟Himansh...\A⌰⍜⏃⎅⟟⋏hHimanshu...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; */
   white-space: pre;
   display: inline-block;
-  animation: l39 3s infinite steps(11) alternate;
+  animation: l39 3s infinite steps(9) alternate;
 }
 
 @keyframes l39 {
