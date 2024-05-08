@@ -1038,3 +1038,16 @@ content-visibility: auto;
 }
 }
 
+/* *********************Scroll  bar *********************** */
+
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+background: #232329;
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient( #232329, orangered , #232329) ;
+  /* border-radius: 20px; */
+}
