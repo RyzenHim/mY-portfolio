@@ -1037,9 +1037,7 @@ body {
     backdrop-filter: blur(8px) saturate(100%);
     z-index: 9;
   }
-  .about-me .me h1 {
-    color: hotpink;
-  }
+
   .about_me {
     width: 100vw;
     height: auto;
@@ -1056,7 +1054,7 @@ body {
     padding-bottom: 20px;
   }
   .about_me p {
-    padding-left: 30px;
+    padding-left: 0px;
     text-align: justify;
     text-justify: inter-word;
 
@@ -1072,7 +1070,9 @@ body {
     /* line-height: 30px; */
     gap: 50px;
     padding-top: 20px;
+    padding-bottom: 100px;
   }
+
   .skills_icontwo {
     padding: 0px 0px;
   }
@@ -1099,11 +1099,11 @@ body {
   .skills_icontwo {
     display: flex;
     /* flex-wrap: nowrap; */
-    gap: 25px;
-    align-items: center;
+    gap: 8px;
+    /* align-items: center; */
     justify-content: space-between;
     background-color: rgb(35, 35, 41);
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }
 /* *********************Scroll  bar *********************** */
