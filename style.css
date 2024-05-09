@@ -19,13 +19,14 @@ body{
     /* background-color: blueviolet; */
     height: 5.5vh;
     width: 100%;
+    background: transparent;
     /* border-bottom: 1px solid grey; */
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
     /* webkit-backdrop-filter: blur(8px); */
     -webkit-backdrop-filter: blur(3px) saturate(180%);
     backdrop-filter: blur(8px) saturate(100%);
-    z-index: 10000;
+    z-index: 9;
 
 }
 .nav_list{
@@ -52,10 +53,7 @@ body{
     cursor: pointer;
 
       color: #ffffff;
-      /* background: #008cff; */
-      /* background:orangered; */
-      /* border: 1px solid #008cff; */
-      /* border: 1px solid orangered; */
+
       text-shadow: 0 0 25px orangered, 0 0px 30px orangered, 0 0 10px orangered;
       /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
       /* box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
@@ -207,59 +205,27 @@ body{
 /* navigation bar github button ended */
 
 
+
+/* ****************left side started************** */
 .main_profile{
-    display: flex;
-    width: 100%;
-    background-color: rgb(35, 35, 41);
-}
-.main_profile_left{
-    padding-top: 30vh;
-    height: 100vh;
-    width:50%;
-    padding-bottom: 5vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* left side resume button starts */
-
-#btn_resume{
-  width: 150px;
-  height: 50px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 500;
-  color: orangered;
-  text-shadow: none;
-  background: transparent;
-  cursor: pointer;
-  box-shadow: transparent;
-  border: 1px solid orangered;
-  transition: 0.5s ease;
-  user-select: none;
-}
-.intro_left_btn{
   display: flex;
-  justify-content: center;
+  width: 100%;
+  background-color: rgb(35, 35, 41);
+  /* flex-wrap: wrap; */
+}
+
+.main_profile_left{
+  /* padding-top: 30vh; */
+  height: 100vh;
+  width:50%;
+  /* padding-bottom: 5vh; */
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
   align-items: center;
-  gap:5vw;
-  margin-left: 100px;
-  width: 80%;
-
+  justify-content: center;
+  /* background-color: rgb(39, 52, 64); */
 }
-#btn_resume:hover,
-:focus {
-  color: #ffffff;
-  background:orangered;
-  border: 1px solid orangered;
-  box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
-    0 0 100px orangered;
-}
-
-/* left side resume button end */
 
 
 .intro_main{
@@ -271,41 +237,106 @@ body{
     padding-left: 10vw;
     /* align-items: center; */
     padding-bottom: 100px;
-}
-.intro_main p{
-  width: 35vw;
-    font-size: 14vh;
-    color: orangered;
-    text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
-    font-weight: 1000;
+    /* position: absolute; */
 }
 .intro_main h2{
-    color: white;
-    font-size: 4vh;
-    text-shadow: 6px 1px 6px rgba(0,0,0,0.63);  
-    /* text-align: center; */
-
+  color: white;
+  font-size: 4vh;
+  text-shadow: 6px 1px 6px rgba(0,0,0,0.63);  
+  /* text-align: center; */
+/* background-color: green; */
 }
+.intro_main .span{
+  /* position: relative; */
+  /* width: 100%; */
+  min-height: 10vw;
+    font-size: 10rem;
+    color: orangered;
+    /* padding-right: 50px; */
+    text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
+    font-weight: 1000;
+    /* background-color:rgb(146, 29, 166) ; */
+}
+
 .intro_main h4{
     color: white;
-    font-size: 1.2vw;
+    font-size: 2vh;
     font-weight: 400;
     text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
-    padding-left: 10vw;
+    padding-right: 6vw;
+    /* background-color: #fff; */
+    text-align: center;
+    width: 100%;
 }
+
+
+/* left side resume button starts */
+
+.intro_left_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5vw;
+  /* margin-left: 100px; */
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+
+#btn_resume{
+  min-width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: orangered;
+  /* text-shadow: none; */
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid orangered;
+  transition: 0.5s ease;
+  user-select: none;
+  text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
+  /* -webkit-backdrop-filter: blur(3px) saturate(180%);
+  backdrop-filter: blur(8px) saturate(100%);
+  z-index: 9; */
+}
+
+#btn_resume:hover,
+:focus {
+  color: #ffffff;
+  background:orangered;
+  border: 1px solid orangered;
+  box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
+    0 0 100px orangered;
+    text-shadow: none;
+  }
+
+/* left side resume button end */
+
+/*----------left side endded--------------- */
+
+/* ****************right side******************* */
 .main_profile_right{
     height:100vh;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: end;
     /* align-items: center; */
     justify-content:end;
 
 }
+
 .main_profile_right img{
-  /* position: absolute; */
-  width: 40vw;
+  /* width: 48rem; */
+  width: 800px;
+  /* height: 88vh; */
 }
+
+/* /-----------------right side-------------------/ */
+
 
 /* social media card started */
 
@@ -955,12 +986,13 @@ content-visibility: auto;
   backdrop-filter: blur(8px) saturate(100%);
 }
 .end_footer_div{
-  width: 50%;
+  width: 100vw;
   height: 5vh;
   /* background-color: rgb(145, 106, 106); */
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
   
 }
 .loader {
@@ -1013,31 +1045,30 @@ content-visibility: auto;
 
 
 /* ************************************* */
-
-
-
-@media (max-width:600px) {
-    .ri-menu-3-line{
-        display:block;
-    }
-.nav_list{
-    display: none;
+/* ****************media query******************* */
+@media only screen and (max-width: 600px) {
+  .main_profile_left {
+    /* background-color: lightblue; */
+  }
+  .main_profile_left{
+    position: absolute;
+    width: 50vw;
+    padding-bottom: 40vh;
+  }
+.main_profile_left .span{
+width: 45vw;
+font-size: 18vw;
 }
 .intro_main h4{
-  color: white;
-  font-size: 5vw;
-  width: 80vw;
-  /* text-align: center; */
-  font-weight: 400;
-  text-shadow: 6px 1px 6px rgba(0,0,0,0.63);
-  /* background-color: #00acee; */
-  padding-left: 10vw;
-}
-.intro_main p{
-  font-size: 18vw;
-}
+  width: 100%;
+  position: relative;
+  height: 10px;
+  background-color: rgb(34, 63, 227);
+  font-size: 20px ;
+  flex-wrap: nowrap;
 }
 
+}
 /* *********************Scroll  bar *********************** */
 
 
