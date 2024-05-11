@@ -47,12 +47,10 @@ body {
 }
 .nav_list li:hover,
 :focus {
-  color: orangered;
+  /* color: orangered; */
   transition-duration: 0.3s;
   cursor: pointer;
-
   color: #ffffff;
-
   text-shadow: 0 0 25px orangered, 0 0px 30px orangered, 0 0 10px orangered;
   /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
   /* box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
@@ -74,7 +72,7 @@ body {
 
 /* nav icon button starts */
 
-#button {
+#main_icon {
   border: none;
   position: relative;
   width: 200px;
@@ -91,7 +89,7 @@ body {
   transform: translateY(8px);
 }
 
-#button:after {
+#main_icon:after {
   content: "";
   position: absolute;
   left: 0;
@@ -102,12 +100,12 @@ body {
   transition: all 2s ease;
 }
 
-#button:hover:after {
+#main_icon:hover:after {
   /* box-shadow: 0px -13px 56px 12px #ffffffa6; */
   box-shadow: 0px -13px 56px 12px orangered;
 }
 
-#button span {
+#main_icon span {
   position: absolute;
   width: 100%;
   font-size: 18px;
@@ -123,11 +121,11 @@ body {
   transition: all 2s ease;
 }
 
-#button:hover span {
+#main_icon:hover span {
   color: white;
 }
 
-#button:before {
+#main_icon:before {
   content: "";
   position: absolute;
   width: 0;
@@ -139,7 +137,7 @@ body {
   transition: all 1s ease;
 }
 
-#button:hover:before {
+#main_icon:hover:before {
   width: 100%;
 }
 
@@ -204,6 +202,7 @@ body {
 .main_profile {
   display: flex;
   width: 100%;
+  height: 100%;
   background-color: rgb(35, 35, 41);
   /* flex-wrap: wrap; */
 }
@@ -213,28 +212,41 @@ body {
   height: 100vh;
   width: 50%;
   /* padding-bottom: 5vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* z-index: 2; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: rgb(32, 56, 78); */
   display: flex;
   flex-direction: column;
-  z-index: 2;
-  align-items: center;
-  justify-content: center;
-  /* background-color: rgb(39, 52, 64); */
+  justify-content: space-around;
+  /* gap: 100px; */
+  /* padding: 150px 100px; */
+  /* position: relative; */
 }
 
 .intro_main {
   /* background-color: aqua; */
-  width: 100;
+  min-width: 40%;
+  /* min-width: 100%; */
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10vw;
+  /* padding-left: 10vw; */
   /* align-items: center; */
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   /* position: absolute; */
+  /* padding-top: 100px; */
+  /* background-color: salmon; */
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
 }
 .intro_main h2 {
   color: white;
-  font-size: 4vh;
+  font-size: 2rem;
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
   /* text-align: center; */
   /* background-color: green; */
@@ -242,8 +254,9 @@ body {
 .intro_main .span {
   /* position: relative; */
   /* width: 100%; */
-  min-height: 10vw;
-  font-size: 10rem;
+  /* min-height: 10vw; */
+  font-size: 7vw;
+  /* line-height: 10vh; */
   color: orangered;
   /* padding-right: 50px; */
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
@@ -253,25 +266,28 @@ body {
 
 .intro_main h4 {
   color: white;
-  font-size: 2vh;
+  font-size: 1rem;
   font-weight: 400;
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
   padding-right: 6vw;
   /* background-color: #fff; */
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* left side resume button starts */
 
 .intro_left_btn {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 5vw;
   /* margin-left: 100px; */
-  width: 100%;
-  /* background-color: blueviolet; */
+  /* min-width: 60%; */
+  /* background-color: rgb(63, 35, 88); */
+  position: absolute;
+  bottom: 18vh;
+  left: 16vw;
 }
 
 #btn_resume {
@@ -300,7 +316,7 @@ body {
 :focus {
   color: #ffffff;
   background: orangered;
-  border: 1px solid orangered;
+  border: 1px solid rgb(255, 255, 255);
   box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
     0 0 100px orangered;
   text-shadow: none;
@@ -313,11 +329,12 @@ body {
 /* ****************right side******************* */
 .main_profile_right {
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: end;
   /* align-items: center; */
   justify-content: end;
+  /* background-color: seagreen; */
 }
 
 .main_profile_right img {
@@ -1003,42 +1020,6 @@ body {
 /* ************************************* */
 /* ****************media query******************* */
 @media only screen and (max-width: 600px) {
-  .main_profile_left {
-    position: absolute;
-    width: 50vw;
-  }
-  .main_profile_left .span {
-    width: 45vw;
-    font-size: 18vw;
-  }
-  .intro_main h4 {
-    width: 53vw;
-    /* position: relative; */
-    height: auto;
-    /* background-color: rgb(34, 63, 227); */
-    font-size: 20px;
-    /* justify-content: center; */
-    /* flex-wrap: nowrap; */
-    /* text-align: end; */
-    text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
-  }
-  .intro_main h2 {
-    font-size: 8vw;
-    /* color: green; */
-  }
-  .intro_left_btn {
-    margin-left: 250px;
-    /* margin-top: 400px; */
-    padding-top: 400px;
-    /* background-color: #fff */
-    gap: 60px;
-  }
-  #btn_resume {
-    -webkit-backdrop-filter: blur(3px) saturate(180%);
-    backdrop-filter: blur(8px) saturate(100%);
-    z-index: 9;
-  }
-
   .about_me {
     width: 100vw;
     height: auto;
@@ -1213,6 +1194,7 @@ body {
   .mainfooter_content {
     /* display: flex; */
     /* flex-direction: column; */
+    padding: 30px 0px;
     gap: 20px;
     width: 90vw;
   }
