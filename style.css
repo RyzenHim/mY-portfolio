@@ -486,6 +486,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 .card__img:hover {
   background-color: rgb(255, 167, 135);
