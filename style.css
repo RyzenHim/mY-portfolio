@@ -19,14 +19,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: blueviolet; */
   height: 5.5vh;
   width: 100%;
   background: transparent;
-  /* border-bottom: 1px solid grey; */
-  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
-  /* webkit-backdrop-filter: blur(8px); */
   -webkit-backdrop-filter: blur(3px) saturate(180%);
   backdrop-filter: blur(8px) saturate(100%);
   z-index: 9;
@@ -36,8 +32,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 35px;
-  /* background-color: aqua; */
-  /* width: 20vw; */
   list-style: none;
   font-size: 16px;
   font-weight: 500;
@@ -50,27 +44,13 @@ body {
 }
 .nav_list li:hover,
 :focus {
-  /* color: orangered; */
   transition-duration: 0.3s;
   cursor: pointer;
   color: #ffffff;
   text-shadow: 0 0 25px orangered, 0 0px 30px orangered, 0 0 10px orangered;
-  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
-  /* box-shadow: 0 0 5px orangered, 0 0 20px orangered, 0 0 50px orangered,
-        0 0 100px orangered; */
-  /* box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-        0 0 100px #008cff; */
+
 }
-/* 
-.icon {
-  display: flex;
-  align-items: center;
-} */
-/* .icon img {
-  width: 60px;
-  margin: 10px;
-  filter: invert(1);
-} */
+
 
 /* nav icon button starts  232329*/
 
@@ -88,8 +68,6 @@ body {
   -webkit-mask-size: 100%;
   cursor: pointer;
   background-color: orangered;
-  /* background-color: transparent; */
-  /* transform: translateY(0px); */
 }
 
 #main_icon:after {
@@ -98,13 +76,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* box-shadow: 0px 0 0 0 white; */
   box-shadow: 0px 0 0 0 orangered;
   transition: all 2s ease;
 }
 
 #main_icon:hover:after {
-  /* box-shadow: 0px -13px 56px 12px #ffffffa6; */
   box-shadow: 0px -13px 56px 12px orangered;
 }
 
@@ -112,14 +88,12 @@ body {
   position: absolute;
   width: 100%;
   font-size: 16px;
-  /* font-weight: 100; */
   font-weight: 600;
   left: 50%;
   top: 39%;
   letter-spacing: 3px;
   text-align: center;
   transform: translate(-50%, -50%);
-  /* color: black; */
   color: rgb(255, 255, 255);
   transition: all 2s ease;
 }
@@ -169,12 +143,10 @@ body {
 
 .svgIcon path {
   fill: white;
-  /* fill: orangered; */
 }
 
 .text {
   position: absolute;
-  /* color: rgb(255, 255, 255); */
   color: orangered;
   width: 120px;
   font-weight: 500;
@@ -188,7 +160,6 @@ body {
   height: 4vh;
   transition-duration: 0.4s;
   border-radius: 30px;
-  /* background-color: slategray; */
   background-color: orangered;
 }
 
@@ -215,38 +186,19 @@ body {
 }
 
 .main_profile_left {
-  /* padding-top: 30vh; */
   height: 100vh;
   width: 50%;
-  /* padding-bottom: 5vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* z-index: 2; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* background-color: rgb(32, 56, 78); */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* gap: 100px; */
-  /* padding: 150px 100px; */
-  /* position: relative; */
 }
 
 .intro_main {
-  /* background-color: aqua; */
   min-width: 40%;
-  /* min-width: 100%; */
   min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding-left: 10vw; */
-  /* align-items: center; */
-  /* padding-bottom: 100px; */
-  /* position: absolute; */
-  /* padding-top: 100px; */
-  /* background-color: salmon; */
   position: absolute;
   left: 10vw;
   top: 20vh;
@@ -255,21 +207,13 @@ body {
   color: white;
   font-size: 2rem;
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
-  /* text-align: center; */
-  /* background-color: green; */
+
 }
 .intro_main .span {
-  /* position: relative; */
-  /* width: 100%; */
-  /* min-height: 10vw; */
   font-size: clamp(65px, 10vw, 150px);
-  /* font-size: 7vw; */
-  /* line-height: 10vh; */
   color: orangered;
-  /* padding-right: 50px; */
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
   font-weight: 1000;
-  /* background-color:rgb(146, 29, 166) ; */
 }
 
 .intro_main h4 {
@@ -278,9 +222,7 @@ body {
   font-weight: 400;
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
   padding-right: 6vw;
-  /* background-color: #fff; */
   text-align: center;
-  /* width: 100%; */
   text-wrap: nowrap;
 }
 
