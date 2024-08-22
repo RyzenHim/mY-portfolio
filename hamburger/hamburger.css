@@ -1,0 +1,28 @@
+.hamburger{
+    width: 28px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display:none;
+}
+.hamburger .bar{
+    border: 1.5px solid aliceblue;
+    width: 100%;
+    height: 0px;
+}
+
+.hamburger_active{
+    width: 28px;
+    height: 20px;
+    border: 1px solid red;  
+    position: relative; 
+}
+.bar_active{
+    border: 2px solid red;
+    position: absolute;
+    width: 100%;
+    
+
+}
