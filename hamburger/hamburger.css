@@ -33,3 +33,18 @@ nav {
     display: inline-block;
   }
 }
+.collapsable_menu_main_div {
+  background-color: #fff;
+  position: fixed;
+  top: 5.5vh;
+  width: 100%;
+  padding: 10px;
+  z-index: 999;
+}
+.collapsable_menu_main_div ul {
+  display: flex;
+  justify-content: space-around;
+}
+.collapsable_menu_main_div ul li {
+  list-style: none;
+}
