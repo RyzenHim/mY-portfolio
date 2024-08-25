@@ -11,3 +11,11 @@ function checkMenuState() {
     console.log("collapsable_menu_main_div_active it contains ");
   }
 }
+
+window.addEventListener("resize", () => {
+  var w = window.innerWidth;
+  if (w > 600) {
+    hamMenu.classList.remove("collapsable_menu_main_div_active");
+    hamburger.classList.remove("change");
+  }
+});
