@@ -13,7 +13,7 @@ animationNav.from("#main_icon", {
 
 gsap.from(".nav_list li", {
   duration: 1,
-  x: 50,
+  x: 100,
   ease: "elastic.out",
   stagger: 0.2,
   yoyo: true,
