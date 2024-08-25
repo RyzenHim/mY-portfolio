@@ -33,18 +33,33 @@ nav {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 600px) {
+  .collapsable_menu_main_div {
+    display: none;
+  }
+}
 .collapsable_menu_main_div {
-  background-color: #fff;
+  background-color: #ffffff16;
   position: fixed;
   top: 5.5vh;
   width: 100%;
-  padding: 10px;
+  padding: 15px 10px;
   z-index: 999;
+  backdrop-filter: blur(1000px);
+  color: orangered;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: none;
 }
 .collapsable_menu_main_div ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .collapsable_menu_main_div ul li {
   list-style: none;
+}
+
+.collapsable_menu_main_div_active {
+  display: block;
 }
