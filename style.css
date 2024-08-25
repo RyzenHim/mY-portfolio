@@ -14,8 +14,8 @@ body {
   width: 100%;
   height: 100%;
 }
-::selection{
-background-color: orangered;
+::selection {
+  background-color: orangered;
 }
 .nav {
   position: fixed;
@@ -42,6 +42,9 @@ background-color: orangered;
   color: white;
   /* margin-right: 60px; */
 }
+.nav_list li {
+  white-space: nowrap;
+}
 
 .nav_list i {
   display: none;
@@ -52,9 +55,7 @@ background-color: orangered;
   cursor: pointer;
   color: #ffffff;
   text-shadow: 0 0 25px orangered, 0 0px 30px orangered, 0 0 10px orangered;
-
 }
-
 
 /* nav icon button starts  232329*/
 
@@ -211,7 +212,6 @@ background-color: orangered;
   color: white;
   font-size: 2rem;
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
-
 }
 .intro_main .span {
   font-size: clamp(65px, 10vw, 150px);
@@ -415,7 +415,7 @@ background-color: orangered;
 }
 
 .first_project:hover {
-  transform: scale(1.02);
+  transform: scale(0.9);
   box-shadow: 0px 0px 10px 2px #ff0000;
   --font-color: rgb(255, 255, 255);
   transition: 0.4s;
@@ -427,11 +427,10 @@ background-color: orangered;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
-.card__img img{
+.card__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-
+  object-fit: fill;
 }
 .card__img:hover {
   background-color: rgb(255, 167, 135);
@@ -547,16 +546,16 @@ background-color: orangered;
 
 .skill-per.css {
   width: 30%;
-  animation-delay: 0.1s;
+  animation-delay: 0.2s;
 }
 
 .skill-per.javascript {
   width: 40%;
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 
 .skill-per.nodejs {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
 @keyframes progress {
@@ -971,7 +970,6 @@ background-color: orangered;
 
 .loader:before {
   content: "H.......\AHi......\AHim.....\AHima....\AHiman...\AHimans..\AHimansh.\AHimanshu\AHimanshu";
-  /* content: "Himanshu\A⌰⌰⍜Hi...\A⌰⍜Him...\A⌰⍜⏃Hima...\A⌰⍜⏃⎅Himan...\A⌰⍜⏃⎅⟟Himansh...\A⌰⍜⏃⎅⟟⋏hHimanshu...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; */
   white-space: pre;
   display: inline-block;
   animation: l39 3s infinite steps(9) alternate;
@@ -980,6 +978,7 @@ background-color: orangered;
 @keyframes l39 {
   100% {
     transform: translateY(-100%);
+    opacity: 1;
   }
 }
 /* end footer ended */
@@ -1119,8 +1118,6 @@ background-color: orangered;
     height: auto;
     gap: 5px;
   }
-
-
 
   .mainfooter {
     gap: 30px;

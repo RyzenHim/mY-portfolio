@@ -58,6 +58,7 @@ nav {
 }
 .collapsable_menu_main_div ul li {
   list-style: none;
+  cursor: pointer;
 }
 
 .collapsable_menu_main_div_active {
