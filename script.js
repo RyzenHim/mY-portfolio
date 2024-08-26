@@ -6,9 +6,9 @@ animationNav.from("#main_icon", {
   delay: 1,
   stagger: 0.9,
   yoyo: true,
-  ease: "elastic",
+  // ease: "elastic",
   duration: 2,
-  x: -500,
+  y: -200,
 });
 
 const animateIcon = gsap.timeline();
@@ -28,4 +28,15 @@ gsap.from(".main_profile_right img", {
   duration: 1,
   stagger: 0.9,
   ease: "in",
+});
+
+document.addEventListener("mousemove", (e) => {
+  gsap.to(".cursor_div", {
+    x: e.x,
+    y: e.y,
+    duration: 1,
+    stagger: 0.9,
+    ease: "elastic-out",
+    // delay: 0.2,
+  });
 });
