@@ -30,6 +30,40 @@ gsap.from(".main_profile_right img", {
   ease: "in",
 });
 
+gsap.from(".me h1", {
+  x: -200,
+});
+gsap.from(".me p", {
+  x: 2000,
+  stagger: 0.5,
+  ease: "in",
+  duration: 1,
+  // opacity: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".me p",
+    markers: true,
+    start: "top 80%",
+    end: "bottom 20%",
+    scrub: 4,
+  },
+});
+gsap.from(".skills p", {
+  x: 2000,
+  stagger: 0.5,
+  ease: "in",
+  duration: 0.5,
+  // opacity: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".me p",
+    markers: true,
+    start: "top 80%",
+    end: "bottom 20%",
+    scrub: 4,
+  },
+});
+
 document.addEventListener("mousemove", (e) => {
   gsap.to(".cursor_div", {
     x: e.x,
