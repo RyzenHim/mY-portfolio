@@ -11,7 +11,8 @@ animationNav.from("#main_icon", {
   x: -500,
 });
 
-gsap.from(".nav_list li", {
+const animateIcon = gsap.timeline();
+animateIcon.from(".nav_list li", {
   duration: 1,
   x: 100,
   ease: "elastic.out",
@@ -19,4 +20,12 @@ gsap.from(".nav_list li", {
   yoyo: true,
   opacity: -2,
   delay: 1,
+});
+gsap.from(".main_profile_right img", {
+  x: 500,
+  delay: 1,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.9,
+  ease: "in",
 });

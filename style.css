@@ -24,9 +24,9 @@ body {
   justify-content: space-between;
   height: 5.5vh;
   width: 100%;
-  background: transparent;
-  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
-  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background: rgba(0, 0, 0, 0.087);
+  box-shadow: rgba(0, 0, 0, 0.373) 0px 2px 5px;
+  /* -webkit-backdrop-filter: blur(3px) saturate(180%); */
   backdrop-filter: blur(8px) saturate(100%);
   z-index: 9;
 }
@@ -297,6 +297,7 @@ body {
   /* width: 48rem; */
   width: 800px;
   /* height: 88vh; */
+  /* mix-blend-mode: multiply; */
 }
 
 /* /-----------------right side ended-------------------/ */
