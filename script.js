@@ -34,7 +34,7 @@ gsap.from(".me h1", {
   x: -200,
 });
 gsap.from(".me p", {
-  x: 2000,
+  x: 600,
   stagger: 0.5,
   ease: "in",
   duration: 1,
@@ -42,14 +42,14 @@ gsap.from(".me p", {
   scrollTrigger: {
     scroller: "body",
     trigger: ".me p",
-    markers: true,
+    // markers: true,
     start: "top 80%",
     end: "bottom 20%",
     scrub: 4,
   },
 });
 gsap.from(".skills p", {
-  x: 2000,
+  x: 900,
   stagger: 0.5,
   ease: "in",
   duration: 0.5,
@@ -57,7 +57,7 @@ gsap.from(".skills p", {
   scrollTrigger: {
     scroller: "body",
     trigger: ".me p",
-    markers: true,
+    // markers: true,
     start: "top 80%",
     end: "bottom 20%",
     scrub: 4,
@@ -73,4 +73,25 @@ document.addEventListener("mousemove", (e) => {
     ease: "elastic-out",
     // delay: 0.2,
   });
+});
+
+// ======== skills icons animation=====
+
+const iconANimation = gsap.timeline();
+
+iconANimation.from(".icon", {
+  duration: 1,
+  x: 100,
+  ease: "elastic.out",
+  stagger: 0.2,
+  yoyo: true,
+  opacity: 0,
+  // delay: 1,
+  // scrollTrigger: {
+  //   scroller: "body",
+  //   trigger: ".skills_icontwo",
+  //   markers: true,
+  //   start: "top 0%",
+  //   end: "bottom 100%",
+  // },
 });
