@@ -1002,6 +1002,9 @@ body {
 /* ************************************* */
 /* ****************media query******************* */
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .intro_main {
     position: absolute;
     left: 15vw;
