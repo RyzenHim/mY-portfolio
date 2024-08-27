@@ -20,6 +20,9 @@ body {
 ::selection {
   background-color: orangered;
 }
+header {
+  overflow-x: hidden;
+}
 .nav {
   position: fixed;
   display: flex;
@@ -32,6 +35,7 @@ body {
   /* -webkit-backdrop-filter: blur(3px) saturate(180%); */
   backdrop-filter: blur(8px) saturate(100%);
   z-index: 9;
+  /* overflow-x: hidden; */
 }
 .nav_list {
   display: flex;
@@ -316,6 +320,7 @@ body {
   line-height: 30px;
   gap: 50px;
   padding: 30px;
+  overflow-x: hidden;
 }
 .about_me h1 {
   color: orangered;
@@ -334,6 +339,7 @@ body {
   height: auto;
   width: 100%;
   padding-bottom: 5vh;
+  /* outline: 1px solid blue; */
 }
 .skills_icontwo div {
   height: 150px;

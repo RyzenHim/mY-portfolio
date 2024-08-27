@@ -1,5 +1,5 @@
 const animationNav = gsap.timeline();
-console.log("hey");
+// console.log("hey");
 
 animationNav.from("#main_icon", {
   // opacity: 0,
@@ -11,16 +11,24 @@ animationNav.from("#main_icon", {
   y: -200,
 });
 
-const animateIcon = gsap.timeline();
-animateIcon.from(".nav_list li", {
-  duration: 1,
-  x: 100,
-  ease: "elastic.out",
-  stagger: 0.2,
-  yoyo: true,
-  opacity: -2,
-  delay: 1,
+window.addEventListener("load", () => {
+  var win = window.screen.width;
+  console.log(win);
+
+  const animateIcon = gsap.timeline();
+  if (win > 600) {
+    animateIcon.from(".nav_list li", {
+      duration: 1,
+      x: 100,
+      ease: "elastic.out",
+      stagger: 0.2,
+      yoyo: true,
+      opacity: -2,
+      delay: 1,
+    });
+  }
 });
+
 gsap.from(".main_profile_right img", {
   x: 500,
   delay: 1,
@@ -34,7 +42,7 @@ gsap.from(".me h1", {
   x: -200,
 });
 gsap.from(".me p", {
-  x: 600,
+  x: -600,
   stagger: 0.5,
   ease: "in",
   duration: 1,
@@ -49,7 +57,7 @@ gsap.from(".me p", {
   },
 });
 gsap.from(".skills p", {
-  x: 900,
+  x: -900,
   stagger: 0.5,
   ease: "in",
   duration: 0.5,
@@ -77,21 +85,21 @@ document.addEventListener("mousemove", (e) => {
 
 // ======== skills icons animation=====
 
-const iconANimation = gsap.timeline();
+// const iconANimation = gsap.timeline();
 
-iconANimation.from(".icon", {
-  duration: 1,
-  x: 100,
-  ease: "elastic.out",
-  stagger: 0.2,
-  yoyo: true,
-  opacity: 0,
-  // delay: 1,
-  // scrollTrigger: {
-  //   scroller: "body",
-  //   trigger: ".skills_icontwo",
-  //   markers: true,
-  //   start: "top 0%",
-  //   end: "bottom 100%",
-  // },
-});
+// iconANimation.from(".icon", {
+//   duration: 1,
+//   x: 100,
+//   ease: "elastic.out",
+//   stagger: 0.2,
+//   yoyo: true,
+//   opacity: 0,
+//   delay: 1,
+// scrollTrigger: {
+//   scroller: "body",
+//   trigger: ".skills_icontwo",
+//   markers: true,
+//   start: "top 0%",
+//   end: "bottom 100%",
+// },
+// });
