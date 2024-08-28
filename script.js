@@ -204,3 +204,17 @@ gsap.from(".skills p", {
     scrub: 2,
   },
 });
+
+let openProject = document.querySelector(".open_project_link");
+let projectCard = document.querySelector(".projectstwo");
+
+window.addEventListener("mouseMove", () => {
+  // openProject.style.display = "block";
+  console.log("enter");
+});
+
+// projectCard.forEach((e) => {
+//   e.addEventListener("mouseEnter", () => {
+//     openProject.style.display = "block";
+//   });
+// });
