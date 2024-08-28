@@ -36,36 +36,6 @@ window.addEventListener("load", () => {
     // gsap.from(".me h1", {
     //   x: -200,
     // });
-    gsap.from(".me p", {
-      x: -2000,
-      stagger: 0.5,
-      ease: "in",
-      duration: 1,
-      opacity: -2,
-      scrollTrigger: {
-        scroller: "body",
-        trigger: ".me p",
-        // markers: true,
-        start: "top 80%",
-        end: "bottom 60%",
-        scrub: 2,
-      },
-    });
-    gsap.from(".skills p", {
-      x: -2000,
-      stagger: 0.5,
-      ease: "in",
-      duration: 0.6,
-      opacity: -2,
-      scrollTrigger: {
-        scroller: "body",
-        trigger: ".me p",
-        // markers: true,
-        start: "top 80%",
-        end: "bottom 50%",
-        scrub: 2,
-      },
-    });
 
     // ======== skills icons animation=====
 
@@ -149,8 +119,9 @@ document.addEventListener("mousemove", (e) => {
     y: e.y,
     duration: 1,
     stagger: 0.9,
-    ease: "elastic-out",
-    // delay: 0.2,
+    ease: "elastic.out",
+    delay: 0.1,
+    yoyo: true,
   });
 });
 gsap.from(".projectstwo", {
@@ -200,6 +171,36 @@ gsap.from(".skill-box", {
     // markers: true,
     start: "top 60%",
     end: "bottom 40%",
+    scrub: 2,
+  },
+});
+gsap.from(".me p", {
+  x: -2000,
+  stagger: 0.5,
+  ease: "in",
+  duration: 1,
+  opacity: -2,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".me p",
+    // markers: true,
+    start: "top 80%",
+    end: "bottom 60%",
+    scrub: 2,
+  },
+});
+gsap.from(".skills p", {
+  x: -2000,
+  stagger: 0.5,
+  ease: "in",
+  duration: 0.6,
+  opacity: -2,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".me p",
+    // markers: true,
+    start: "top 80%",
+    end: "bottom 50%",
     scrub: 2,
   },
 });

@@ -205,6 +205,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   z-index: 5;
+  position: relative;
 }
 
 .intro_main {
@@ -216,6 +217,7 @@ header {
   position: absolute;
   left: 10vw;
   top: 20vh;
+  /* margin: 20px; */
 }
 .intro_main h2 {
   color: white;
@@ -242,14 +244,19 @@ header {
 /* left side resume button starts */
 
 .intro_left_btn {
+  /* outline: 1px solid blue; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 8vw;
+  gap: 2vw;
+  width: 50%;
   /* margin-left: 100px; */
-  min-width: 52%;
+  /* min-width: 52%; */
   /* min-width: 40%; */
   /* background-color: rgb(63, 35, 88); */
+  /* right: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
   bottom: 18vh;
   /* left: 14vw; */
@@ -1040,6 +1047,7 @@ header {
   .main_profile_left {
     /* z-index: 0; */
     background-color: transparent;
+    position: static;
   }
 
   body {
@@ -1081,8 +1089,8 @@ header {
 
   .intro_left_btn {
     position: absolute;
-    right: 0px;
-    left: 0px;
+    /* right: 0px; */
+    /* left: 0px; */
     bottom: 10vh;
     /* left: 14vw; */
     display: flex;
@@ -1228,6 +1236,7 @@ header {
 }
 .cursor_main_div {
   position: fixed;
+  z-index: 9;
 }
 .cursor_div {
   width: 100px;
@@ -1242,7 +1251,6 @@ header {
   animation: colorRotate 5s infinite;
   display: flex;
   position: relative;
-  z-index: 10;
 }
 
 .colorThree {
@@ -1298,4 +1306,17 @@ header {
   100% {
     filter: hue-rotate(720deg);
   }
+}
+.project_onTop {
+  background-color: orangered;
+  width: fit-content;
+  padding: 5px 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
