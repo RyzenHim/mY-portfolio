@@ -22,6 +22,7 @@ body {
 }
 header {
   overflow-x: hidden;
+  width: 100%;
 }
 .nav {
   position: fixed;
@@ -35,7 +36,7 @@ header {
   /* -webkit-backdrop-filter: blur(3px) saturate(180%); */
   backdrop-filter: blur(8px) saturate(100%);
   z-index: 9;
-  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 .nav_list {
   display: flex;
@@ -322,6 +323,9 @@ header {
   line-height: 30px;
   gap: 50px;
   padding: 30px;
+  /* overflow: hidden; */
+}
+.me {
   overflow-x: hidden;
 }
 .about_me h1 {
@@ -1015,21 +1019,32 @@ header {
 /* ****************media query******************* */
 @media only screen and (max-width: 600px) {
   * {
+    /* outline: 1px solid blue; */
+  }
+  .nav {
+    overflow: hidden;
+    height: auto;
+    padding: 1px;
+    width: 100%;
   }
   .main_profile_right img {
     width: 700px;
-    overflow-x: visible;
+    /* overflow-x: hidden; */
     z-index: 2;
     position: absolute;
-    right: 0;
+    right: 0px;
+    /* top: 15vh; */
+    bottom: 0;
   }
+
   .main_profile_left {
     /* z-index: 0; */
     background-color: transparent;
   }
 
   body {
-    overflow-x: hidden;
+    /* overflow: hidden; */
+    width: 100%;
   }
 
   .intro_main {
@@ -1065,18 +1080,15 @@ header {
   }
 
   .intro_left_btn {
-    /* display: flex; */
-
-    /* gap: 12vw; */
-    /* margin-left: 100px; */
-    min-width: 100%;
-    /* min-width: 40%; */
-    /* background-color: rgb(63, 35, 88); */
     position: absolute;
+    right: 0px;
+    left: 0px;
     bottom: 10vh;
     /* left: 14vw; */
     display: flex;
     justify-content: space-around;
+    /* outline: 1px solid blue; */
+    width: 100%;
   }
   .skills_iconone {
     width: 100%;
