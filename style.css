@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 html {
   scroll-behavior: smooth;
@@ -299,6 +299,8 @@ header {
   /* align-items: center; */
   justify-content: end;
   /* background-color: seagreen; */
+  overflow-x: hidden;
+  /* z-index: 999; */
 }
 
 .main_profile_right img {
@@ -333,13 +335,16 @@ header {
 }
 
 /* skills icon svg starts here */
-
+.skills {
+  overflow-x: hidden;
+}
 .skills_iconone {
   /* background-color: rgb(249, 220, 185); */
   height: auto;
   width: 100%;
   padding-bottom: 5vh;
   /* outline: 1px solid blue; */
+  overflow-x: hidden;
 }
 .skills_icontwo div {
   height: 150px;
@@ -503,7 +508,7 @@ header {
   background-color: #232329;
   margin: 30px 0px;
   padding-left: 60px;
-
+  overflow-x: hidden;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -517,6 +522,7 @@ header {
   padding: 10px 0px;
   border-radius: 7px;
   user-select: none;
+  overflow-x: hidden;
 }
 
 .skill_container .skill-box {
@@ -1008,9 +1014,24 @@ header {
 /* ************************************* */
 /* ****************media query******************* */
 @media only screen and (max-width: 600px) {
+  * {
+  }
+  .main_profile_right img {
+    width: 700px;
+    overflow-x: visible;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+  }
+  .main_profile_left {
+    /* z-index: 0; */
+    background-color: transparent;
+  }
+
   body {
     overflow-x: hidden;
   }
+
   .intro_main {
     /* position: absolute; */
     /* width: 100%; */
@@ -1134,6 +1155,7 @@ header {
   .projectstwo {
     height: auto;
     gap: 5px;
+    overflow-x: hidden;
   }
 
   .mainfooter {
@@ -1169,6 +1191,7 @@ header {
   }
   .nav_list li {
     display: none;
+    overflow-x: hidden;
   }
   .cardsocial {
     width: 90vw;

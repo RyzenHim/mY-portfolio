@@ -1,12 +1,9 @@
 const animationNav = gsap.timeline();
-// console.log("hey");
 
 animationNav.from("#main_icon", {
-  // opacity: 0,
   delay: 1,
   stagger: 0.9,
   yoyo: true,
-  // ease: "elastic",
   duration: 2,
   y: -200,
 });
@@ -29,6 +26,17 @@ window.addEventListener("load", () => {
   }
 });
 
+// gsap.to(".main_profile_right img", {
+//   y: 350,
+//   scrollTrigger: {
+//     scroller: "body",
+//     trigger: ".main_profile_right img",
+//     markers: true,
+//     start: "top center",
+//     end: "top end",
+//   },
+// });
+
 document.addEventListener("touchmove", (e) => {
   console.log("moved");
   gsap.to(".cursor_div", {
@@ -37,7 +45,6 @@ document.addEventListener("touchmove", (e) => {
     duration: 1,
     stagger: 0.9,
     ease: "elastic-out",
-    // delay: 0.2,
   });
 });
 gsap.from(".main_profile_right img", {
@@ -114,17 +121,17 @@ gsap.from(".skill-box", {
 gsap.from(".projectstwo", {
   y: 500,
   duration: 1,
-  stagger: 0.3,
+  stagger: 0.2,
   ease: "ease.out",
   // yoyo: true,
   opacity: -2,
   scrollTrigger: {
     scroller: "body",
     trigger: ".projectstwo",
-    markers: true,
+    // markers: true,
     start: "top 95%",
     end: "top 85%",
-    scrub: 9,
+    scrub: 2,
   },
 });
 
