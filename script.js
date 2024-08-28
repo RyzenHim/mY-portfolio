@@ -29,6 +29,17 @@ window.addEventListener("load", () => {
   }
 });
 
+document.addEventListener("touchmove", (e) => {
+  console.log("moved");
+  gsap.to(".cursor_div", {
+    x: e.x,
+    y: e.y,
+    duration: 1,
+    stagger: 0.9,
+    ease: "elastic-out",
+    // delay: 0.2,
+  });
+});
 gsap.from(".main_profile_right img", {
   x: 500,
   delay: 1,
@@ -53,7 +64,7 @@ gsap.from(".me p", {
     // markers: true,
     start: "top 80%",
     end: "bottom 20%",
-    scrub: 4,
+    scrub: 2,
   },
 });
 gsap.from(".skills p", {
@@ -68,7 +79,7 @@ gsap.from(".skills p", {
     // markers: true,
     start: "top 80%",
     end: "bottom 20%",
-    scrub: 4,
+    scrub: 2,
   },
 });
 
@@ -85,21 +96,68 @@ document.addEventListener("mousemove", (e) => {
 
 // ======== skills icons animation=====
 
-// const iconANimation = gsap.timeline();
+gsap.from(".skill-box", {
+  x: -10000,
+  duration: 2,
+  stagger: 0.5,
+  ease: "ease.in",
+  yoyo: true,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".skill-box",
+    // markers: true,
+    start: "top 60%",
+    end: "bottom 40%",
+    scrub: 2,
+  },
+});
+gsap.from(".projectstwo", {
+  y: 1000,
+  duration: 1,
+  stagger: 0.3,
+  ease: "ease.out",
+  // yoyo: true,
+  opacity: -2,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".projectstwo",
+    // markers: true,
+    start: "top 90%",
+    end: "bottom 100%",
+    scrub: 2,
+  },
+});
+gsap.from(".icon", {
+  duration: 1,
+  x: 1000,
+  // ease: "elastic.out",
+  stagger: 0.3,
+  yoyo: true,
+  opacity: -2,
+  // delay: 1,
+  // opacity: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".skills_icontwo",
+    // markers: true,
+    start: "top 60%",
+    end: "bottom 70%",
+    scrub: 2,
+  },
+});
 
-// iconANimation.from(".icon", {
-//   duration: 1,
-//   x: 100,
-//   ease: "elastic.out",
-//   stagger: 0.2,
-//   yoyo: true,
-//   opacity: 0,
-//   delay: 1,
-// scrollTrigger: {
-//   scroller: "body",
-//   trigger: ".skills_icontwo",
-//   markers: true,
-//   start: "top 0%",
-//   end: "bottom 100%",
-// },
-// });
+gsap.from(".first_project", {
+  duration: 1,
+  stagger: 0.3,
+  ease: "ease.in",
+  yoyo: true,
+  // opacity: -2,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".first_project",
+    // markers: true,
+    start: "top 100%",
+    end: "bottom 80%",
+    scrub: 2,
+  },
+});
