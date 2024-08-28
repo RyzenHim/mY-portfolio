@@ -112,7 +112,7 @@ gsap.from(".skill-box", {
   },
 });
 gsap.from(".projectstwo", {
-  y: 1000,
+  y: 500,
   duration: 1,
   stagger: 0.3,
   ease: "ease.out",
@@ -121,12 +121,13 @@ gsap.from(".projectstwo", {
   scrollTrigger: {
     scroller: "body",
     trigger: ".projectstwo",
-    // markers: true,
-    start: "top 90%",
-    end: "bottom 100%",
-    scrub: 2,
+    markers: true,
+    start: "top 95%",
+    end: "top 85%",
+    scrub: 9,
   },
 });
+
 gsap.from(".icon", {
   duration: 1,
   x: 1000,
@@ -142,22 +143,6 @@ gsap.from(".icon", {
     // markers: true,
     start: "top 60%",
     end: "bottom 70%",
-    scrub: 2,
-  },
-});
-
-gsap.from(".first_project", {
-  duration: 1,
-  stagger: 0.3,
-  ease: "ease.in",
-  yoyo: true,
-  // opacity: -2,
-  scrollTrigger: {
-    scroller: "body",
-    trigger: ".first_project",
-    // markers: true,
-    start: "top 100%",
-    end: "bottom 80%",
     scrub: 2,
   },
 });
