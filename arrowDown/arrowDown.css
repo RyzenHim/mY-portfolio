@@ -3,17 +3,20 @@
   width: auto;
   height: 50px;
   bottom: 4%;
-  right: 92%;
+  right: 97%;
   z-index: 3;
+  cursor: pointer;
 }
-
+.arrrow_downUp {
+  transform: rotate(180deg);
+}
 .arrrow_down_div {
   width: 20px;
   height: 20px;
   background-color: transparent;
   transform: rotate(45deg);
-  border-right: 2px solid orangered;
-  border-bottom: 2px solid orangered;
+  border-right: 2px solid rgba(255, 68, 0, 0.792);
+  border-bottom: 2px solid rgba(255, 68, 0, 0.792);
 }
 .arrowDownOne {
   animation: pulse 1.5s 0s infinite normal ease forwards;
