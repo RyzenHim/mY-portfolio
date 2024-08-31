@@ -1,5 +1,5 @@
 .arrrow_down {
-  position: absolute;
+  position: fixed;
   width: auto;
   height: 50px;
   bottom: 4%;
@@ -8,152 +8,37 @@
 }
 
 .arrrow_down_div {
-  width: 0;
-  height: 0;
-  border-top: 20px solid orangered;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transform: rotate(45deg);
+  border-right: 2px solid orangered;
+  border-bottom: 2px solid orangered;
 }
 .arrowDownOne {
-  -webkit-animation: pulse 1.5s 0s infinite normal ease forwards;
-  -moz-animation: pulse 1.5s 0s infinite normal ease forwards;
-  -o-animation: pulse 1.5s 0s infinite normal ease forwards;
   animation: pulse 1.5s 0s infinite normal ease forwards;
 }
 .arrowDownTwo {
-  -webkit-animation: pulse 1.5s 0.25s infinite normal ease forwards;
-  -moz-animation: pulse 1.5s 0.25s infinite normal ease forwards;
-  -o-animation: pulse 1.5s 0.25s infinite normal ease forwards;
   animation: pulse 1.5s 0.25s infinite normal ease forwards;
 }
 .arrowDownThree {
-  -webkit-animation: pulse 1.5s 0.5s infinite normal ease forwards;
-  -moz-animation: pulse 1.5s 0.5s infinite normal ease forwards;
-  -o-animation: pulse 1.5s 0.5s infinite normal ease forwards;
   animation: pulse 1.5s 0.5s infinite normal ease forwards;
 }
 
-@-webkit-keyframes pulse {
-  0% {
-    opacity: 0;
-    background-position: center top;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
-  }
-  10% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    -moz-background-size: 20% auto;
-    -o-background-size: 20% auto;
-    -webkit-background-size: 20% auto;
-    background-size: 20% auto;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    background-position: center bottom;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    opacity: 0;
-    background-position: center top;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
-  }
-  10% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    -moz-background-size: 20% auto;
-    -o-background-size: 20% auto;
-    -webkit-background-size: 20% auto;
-    background-size: 20% auto;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    background-position: center bottom;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
-  }
-}
-@-ms-keyframes pulse {
-  0% {
-    opacity: 0;
-    background-position: center top;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
-  }
-  10% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    -moz-background-size: 20% auto;
-    -o-background-size: 20% auto;
-    -webkit-background-size: 20% auto;
-    background-size: 20% auto;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    background-position: center bottom;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
-  }
-}
 @keyframes pulse {
   0% {
     opacity: 0;
-    background-position: center top;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
   }
   10% {
     opacity: 0;
   }
   50% {
     opacity: 1;
-    -moz-background-size: 20% auto;
-    -o-background-size: 20% auto;
-    -webkit-background-size: 20% auto;
-    background-size: 20% auto;
   }
   90% {
     opacity: 0;
   }
   100% {
     opacity: 0;
-    background-position: center bottom;
-    -moz-background-size: 0 auto;
-    -o-background-size: 0 auto;
-    -webkit-background-size: 0 auto;
-    background-size: 0 auto;
   }
 }
