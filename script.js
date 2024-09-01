@@ -205,16 +205,35 @@ gsap.from(".skills p", {
   },
 });
 
-let openProject = document.querySelector(".open_project_link");
-let projectCard = document.querySelector(".projectstwo");
-
-window.addEventListener("mouseMove", () => {
-  // openProject.style.display = "block";
-  console.log("enter");
-});
+let openProject = document.querySelector(".open_project_link_card");
+// let projectCard = document.querySelectorAll(".first_project");
 
 // projectCard.forEach((e) => {
-//   e.addEventListener("mouseEnter", () => {
+//   e.addEventListener("mouseenter", () => {
 //     openProject.style.display = "block";
+//     document.querySelector(".cursor_div").style.display = "none";
+//     console.log("enter");
+//   });
+//   e.addEventListener("mouseleave", (e) => {
+//     openProject.style.display = "none";
+//     document.querySelector(".cursor_div").style.display = "block";
+//     console.log("leave");
+//   });
+// });
+
+// projectCard.forEach((e) => {
+//   e.addEventListener("mousemove", (cordinate) => {
+//     openProject.style.display = "block";
+
+//     // let x = cordinate.x;
+//     // let y = cordinate.y;
+//     let cx = cordinate.clientX;
+//     let cy = cordinate.clientY;
+//     // console.log("x co " + x);
+//     // console.log("y co " + y);
+//     console.log("ex co " + cx);
+//     console.log("ey co " + cy);
+//     openProject.style.top = `${cy}px`;
+//     openProject.style.left = `${cx}px`;
 //   });
 // });

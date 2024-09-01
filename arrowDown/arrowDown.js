@@ -13,23 +13,23 @@ window.addEventListener("scroll", () => {
   //   }
 });
 
-// const clickOnArrowDownButton = document.getElementById("arrrow_down");
+const clickOnArrowDownButton = document.getElementById("arrrow_down");
 // let allSections = document.querySelectorAll(".section");
 // // let rect = clickOnArrowDownButton.getBoundingClientRect();
 // // console.log("height " + rect.height + " width " + rect.width);
-// clickOnArrowDownButton.addEventListener("click", () => {
-//   console.log("clicked");
-//   //   toCheckDownOrUp();
-//   toGoToSecOnClick();
-// });
+clickOnArrowDownButton.addEventListener("click", () => {
+  console.log("clicked");
+  toCheckDownOrUp();
+  //   toGoToSecOnClick();
+});
 
-// function toCheckDownOrUp() {
-//   if (clickOnArrowDownButton.classList.contains("arrrow_downUp")) {
-//     window.scrollTo({ top: 0, behavior: "smooth" });
-//   } else {
-//     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-//   }
-// }
+function toCheckDownOrUp() {
+  if (clickOnArrowDownButton.classList.contains("arrrow_downUp")) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  }
+}
 
 // function toGoToSecOnClick() {
 //   var currentSecIndex = 0;

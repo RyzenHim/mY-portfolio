@@ -1314,9 +1314,13 @@ header {
   }
 }
 /* open link card */
+.main_project_link_span {
+  position: relative;
+}
 .open_project_link {
   text-decoration: none;
   position: absolute;
+  top: 100vh;
   z-index: 10;
   margin: 5px;
   /* display: none; */
@@ -1329,6 +1333,7 @@ header {
   background: #232329;
   border-radius: 5px;
   padding: 5px 25px;
+  white-space: nowrap;
 }
 
 .bg {
