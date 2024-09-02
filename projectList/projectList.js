@@ -4,49 +4,50 @@ let projectCardList = [
     projectTitle: "My Porfolio!",
     projectDescription:
       "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
-    previewLink: "",
-    projectCodeLink: "",
+    previewLink: "https://ryzenhim.github.io/mY-portfolio/#projects",
+    projectCodeLink: "https://github.com/RyzenHim/mY-portfolio",
   },
   {
-    projectImageLink: "files/Screenshot 2024-05-31 002828.png",
-    projectTitle: "My Porfolio!",
+    projectImageLink: "files/Screenshot 2024-06-12 005517.png",
+    projectTitle: "AL Venture",
     projectDescription:
-      "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
-    previewLink: "",
-    projectCodeLink: "",
+      "AL Venture is where you can find the best wedding vendors,hotels and more with prices and reviews at the click of a button.",
+    previewLink: "https://ryzenhim.github.io/hotel-project/",
+    projectCodeLink: "https://github.com/RyzenHim/hotel-project",
   },
   {
-    projectImageLink: "files/Screenshot 2024-05-31 002828.png",
-    projectTitle: "My Porfolio!",
+    projectImageLink: "files/myntra clone.png",
+    projectTitle: "Myntra Clone",
     projectDescription:
-      "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
-    previewLink: "",
-    projectCodeLink: "",
+      "Myntra functional clone. Tried adding same functionality as myntra . More functions would be added later.",
+    previewLink: "https://ryzenhim.github.io/myntra-clone/",
+    projectCodeLink:
+      "https://github.com/RyzenHim/myntra-clone?tab=readme-ov-file",
   },
   {
-    projectImageLink: "files/Screenshot 2024-05-31 002828.png",
-    projectTitle: "My Porfolio!",
+    projectImageLink: "files/formvalidation.png",
+    projectTitle: "Form Validation",
     projectDescription:
-      "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
-    previewLink: "",
-    projectCodeLink: "",
+      "This validates whether the required credentials gets fulfilled or not to complete the form.",
+    previewLink: "https://ryzenhim.github.io/form-validation/",
+    projectCodeLink: "https://github.com/RyzenHim/form-validation",
   },
-  {
-    projectImageLink: "files/Screenshot 2024-05-31 002828.png",
-    projectTitle: "My Porfolio!",
-    projectDescription:
-      "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
-    previewLink: "",
-    projectCodeLink: "",
-  },
-  {
-    projectImageLink: "files/Screenshot 2024-05-31 002828.png",
-    projectTitle: "My Porfolio!",
-    projectDescription:
-      "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
-    previewLink: "",
-    projectCodeLink: "",
-  },
+  // {
+  //   projectImageLink: "files/Screenshot 2024-05-31 002828.png",
+  //   projectTitle: "My Porfolio!",
+  //   projectDescription:
+  //     "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
+  //   previewLink: "",
+  //   projectCodeLink: "",
+  // },
+  // {
+  //   projectImageLink: "files/Screenshot 2024-05-31 002828.png",
+  //   projectTitle: "My Porfolio!",
+  //   projectDescription:
+  //     "Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail.",
+  //   previewLink: "",
+  //   projectCodeLink: "",
+  // },
 ];
 
 // console.log("lets see");
@@ -60,17 +61,24 @@ projectCardList.forEach((e) => {
 
   createdFirstProject.innerHTML = `
 
-              <div class="card__img"> <img src="${e.projectImageLink}"> </div>
+
+          <a href="#" class="open_project_link">
+            <div class="open_project_link_card">
+                  <div class="bg uwu"></div>
+                  <div class="bg"></div>
+                  <li class="p">Preview Project</li>
+            </div>
+          </a>
+
+              <div class="card__img"> <img src="${e.projectImageLink}" loading="lazy"> </div>
               <div class="card__descr-wrapper">
                 <p class="card__title">
                   ${e.projectTitle}
                 </p>
-                <p class="card__descr">
-Presenting a simple yet attractive portfolio of mine which contain all my details . One can connect me on social media or can send me mail. 
-                </p>
+                <p class="card__descr">${e.projectDescription}</p>
                 <div class="card__links">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg"
+                    <svg 
                       viewBox="0 0 640 512" class="svg">&lt;<path
                         d="M562.8 267.7c56.5-56.5
                         56.5-148
@@ -100,10 +108,10 @@ Presenting a simple yet attractive portfolio of mine which contain all my detail
                         182 360
                         132c-56.5-56.5-148-56.5-204.5
                         0L43.2 244.3z"></path></svg>
-                    <a class="link" href="https://ryzenhim.github.io/mY-porfolio/#projects">Preview</a>
+                    <a class="link" href="${e.previewLink}">Preview</a>
                   </div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg"
+                    <svg 
                       viewBox="0 0 496 512" class="svg"><path
                         d="M165.9 397.4c0 2-2.3 3.6-5.2
                         3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
@@ -148,7 +156,7 @@ Presenting a simple yet attractive portfolio of mine which contain all my detail
                         1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3
                         5.6 2.3 1.6-1.3 1.6-3.9
                         0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-                    <a class="link" href="https://github.com/RyzenHim/mY-porfolio">Code</a>
+                    <a class="link" href="${e.projectCodeLink}">Code</a>
                   </div>
                 </div>
               </div>
@@ -157,5 +165,3 @@ Presenting a simple yet attractive portfolio of mine which contain all my detail
   
   `;
 });
-
-console.log(projectCard);
