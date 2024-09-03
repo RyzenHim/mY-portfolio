@@ -1,11 +1,13 @@
 .arrrow_down {
   position: fixed;
-  width: auto;
+  width: fit-content;
   height: 50px;
-  top: 90vh;
-  right: 95vw;
+  top: 88vh;
+  left: 3vw;
+  /* right: 95vw; */
   z-index: 3;
   cursor: pointer;
+  filter: brightness(60%);
 }
 .arrrow_downUp {
   transform: rotate(180deg);

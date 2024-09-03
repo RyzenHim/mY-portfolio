@@ -1,10 +1,11 @@
 html {
   /* height: 100%; */
   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-  /* overflow: hidden; */
 }
 .heroBackground {
   /* display: none; */
+  max-width: 100%;
+  /* overflow-x: hidden; */
 }
 #stars1 {
   width: 1px;
@@ -605,12 +606,13 @@ html {
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 } */
 .stars {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 50%;
   height: 120%;
   transform: rotate(-45deg);
+  filter: opacity(60%);
 }
 
 .star {

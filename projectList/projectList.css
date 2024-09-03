@@ -1,19 +1,20 @@
 /* open link card */
 /* projects sections started */
-.project_des h3 {
+.progress_bar h3 {
   color: orangered;
   font-size: 32px;
   padding-bottom: 20px;
 }
-.project_des > p {
+.progress_bar > p {
   color: rgb(255, 255, 255);
   font-size: 16px;
   padding-left: 30px;
+  max-width: 90%;
 }
-.project_des {
+.progress_bar {
   padding-left: 30px;
   /* padding-top: 50px; */
-  content-visibility: auto;
+  /* content-visibility: auto; */
 }
 
 .project_main_div {
@@ -189,4 +190,12 @@
   font-size: 0.9em;
   font-weight: 300;
   letter-spacing: 2px;
+}
+@media only screen and (max-width: 600px) {
+  .progress_bar h3 {
+    font-size: 24px;
+  }
+  .progress_bar > p {
+    font-size: 14px;
+  }
 }
