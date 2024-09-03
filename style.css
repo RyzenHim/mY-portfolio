@@ -1000,7 +1000,7 @@ header {
     height: auto;
     width: 100%;
     padding-bottom: 5vh;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     overflow-x: hidden;
   }
   .skills_icontwo {
