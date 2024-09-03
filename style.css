@@ -941,6 +941,16 @@ header {
     width: 100%;
     align-items: end;
   }
+  .hero_content {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 15vh;
+    padding-top: 8vh;
+    /* outline: 1px solid blue; */
+    position: absolute;
+    z-index: 2;
+  }
   .hero_content h2 {
     background: -webkit-linear-gradient(white, #d6d6d6);
 
@@ -975,7 +985,7 @@ header {
   }
   .main_profile_right img {
     width: 690px;
-    height: 70vh;
+    height: 75vh;
 
     mix-blend-mode: normal;
     filter: brightness(80%);

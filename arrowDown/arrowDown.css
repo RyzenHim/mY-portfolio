@@ -47,3 +47,10 @@
     opacity: 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  .arrrow_down {
+    /* height: 50px; */
+    top: 83vh;
+    left: 3.5vw;
+  }
+}
