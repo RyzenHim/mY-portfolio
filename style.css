@@ -206,30 +206,19 @@ header {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  /* z-index: -1; */
 }
 
 .main_profile_right img {
   width: 850px;
   height: 88vh;
+
+  filter: brightness(100%);
+  filter: contrast(100%);
+
   mix-blend-mode: screen;
+  filter: drop-shadow(0px 0px 80px #1b2735);
 }
-
-/* /-----------------right side ended-------------------/ */
-/* ****************left side started************** */
-
-/* .main_profile_left {
-  height: 100vh;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 5;
-  position: relative;
-  left: 0;
-  top: 0;
-  background: transparent;
-} */
 
 .intro_main {
   /* margin: 20px; */
@@ -243,11 +232,12 @@ header {
 .hero_content {
   width: 80%;
   padding-top: 30vh;
+  /* outline: 1px solid blue; */
+  position: absolute;
+  z-index: 2;
 }
 .intro_main h2 {
-  /* color: white; */
   font-size: 2rem;
-  /* text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63); */
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -260,14 +250,12 @@ header {
 }
 
 .intro_main h4 {
-  /* color: white; */
   font-size: 1.5rem;
   font-weight: 500;
-  /* text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63); */
-  /* padding-right: 6vw; */
+
   text-align: center;
   text-wrap: nowrap;
-  width: 50%;
+  width: clamp(45%, 45%, 100%);
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -294,7 +282,6 @@ header {
   font-size: 1.2rem;
   font-weight: 500;
   color: orangered;
-  /* text-shadow: none; */
   background: transparent;
   cursor: pointer;
   box-shadow: transparent;
@@ -302,9 +289,8 @@ header {
   transition: 0.5s ease;
   user-select: none;
   text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
-  /* -webkit-backdrop-filter: blur(3px) saturate(180%);
-  backdrop-filter: blur(8px) saturate(100%);
-  z-index: 9; */
+  backdrop-filter: blur(3px) saturate(100%);
+  margin: 0 10px;
 }
 
 #btn_resume:hover,
@@ -325,14 +311,12 @@ header {
   width: 100vw;
   min-height: 100vh;
   color: white;
-  /* background-color: rgb(35, 35, 41); */
   display: flex;
   flex-direction: column;
   line-height: 30px;
   gap: 50px;
   padding: 30px;
-  /* overflow: hidden; */
-  /* background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%); */
+
   background: radial-gradient(ellipse at top, #1c2836 0%, #090a0f 40%);
 }
 .me {
@@ -377,7 +361,8 @@ header {
 }
 .skills_icontwo div:hover {
   transform: scale(1);
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  /* transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+  transition: all 0.5s ease-in-out;
   box-shadow: rgb(204, 62, 43) 0px 0px 50px 10px;
 }
 
@@ -912,205 +897,61 @@ header {
 /* ************************************* */
 /* ****************media query******************* */
 @media only screen and (max-width: 600px) {
-  * {
-    /* outline: 1px solid blue; */
-  }
-  .nav {
-    overflow: hidden;
-    height: auto;
-    padding: 1px;
+  .intro_left_btn_container {
+    /* background-color: #fff; */
     width: 100%;
+    align-items: end;
+  }
+  .hero_content h2 {
+    background: -webkit-linear-gradient(white, #d6d6d6);
+
+    font-size: 1.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero_content h4 {
+    width: 100%;
+    background: -webkit-linear-gradient(white, #d6d6d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: white; */
+  }
+  .intro_name {
+    width: 100%;
+    /* outline: 1px solid blue; */
+    letter-spacing: 10px;
+    /* text-align: center; */
+    margin: 15px 0;
+    font-size: 10px;
   }
   .main_profile_right img {
-    width: 800px;
-    /* overflow-x: hidden; */
-    z-index: 2;
-    position: absolute;
-    right: -20px;
-    height: 50rem;
-    /* top: 15vh; */
-    bottom: 0;
+    /* width: 850px;
+    height: 88vh;
+  
+  
+    mix-blend-mode: screen; */
+    /* filter: brightness(0%); */
+    filter: contrast(90%);
+
+    filter: drop-shadow(0px 0px 80px #1b2735);
+    animation: heroDropShadow 5s infinite ease-in-out;
   }
 
-  .main_profile_left {
-    /* z-index: 0; */
-    background-color: transparent;
-    position: static;
-  }
-
-  body {
-    /* overflow: hidden; */
-    width: 100%;
-  }
-
-  .intro_main {
-    /* position: absolute; */
-    /* width: 100%; */
-    /* left: 15vw; */
-    /* top: 10vh; */
-    /* margin: 0 auto; */
-  }
-  .intro_main .span {
-    font-size: clamp(75px, 10vw, 150px);
-    color: orangered;
-    text-shadow: 6px 1px 6px rgba(0, 0, 0, 0.63);
-  }
-  .about_me {
-    width: 100%;
-    height: auto;
-    gap: 50px;
-    padding-top: 80px;
-  }
-  .about_me h1 {
-    color: orangered;
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
-  .about_me p {
-    padding-left: 0px;
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 14px;
-
-    /* background-color: green; */
-  }
-
-  .intro_left_btn {
-    position: absolute;
-    /* right: 0px; */
-    /* left: 0px; */
-    bottom: 10vh;
-    /* left: 14vw; */
-    display: flex;
-    justify-content: space-around;
-    /* outline: 1px solid blue; */
-    background-color: #fff;
-    width: 100%;
-  }
-  .skills_iconone {
-    width: 100%;
-    height: auto;
-    gap: 50px;
-  }
-
-  .skills_icontwo {
-    margin: 30px 0px;
-  }
-
-  .skills_icontwo div {
-    height: 100px;
-    width: 100px;
-    align-items: space-between;
-    justify-content: center;
-    padding: 20px;
-    transform: scale(0.8);
-    box-shadow: orangered 0px 0px 30px 0px;
-  }
-  .skills_icontwo div:hover {
-    transform: scale(1);
-    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    box-shadow: rgb(255, 0, 0) 0px 0px 50px 10px;
-  }
-
-  .skills_icontwo {
-    display: flex;
-    /* flex-wrap: nowrap; */
-    gap: 8px;
-    /* align-items: center; */
-    justify-content: space-between;
-    background-color: rgb(35, 35, 41);
-    padding: 0 20px;
-    /* height: auto; */
-  }
-  .project_des p {
-    /* background-color: #fff; */
-    font-size: 14px;
-  }
-  .project_des h3 {
-    color: orangered;
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
-  .project_des > p {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    padding-left: 30px;
-  }
-  .project_des {
-    padding-left: 30px;
-    padding-top: 50px;
-    /* content-visibility: auto; */
-  }
-  .skill_container_main {
-    width: 90%;
-    height: auto;
-    /* background-color: #14146b; */
-    /* padding: 0px 0px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-  }
-  .skill_container {
-    max-width: 100%;
-    margin: 0 15px;
-    height: auto;
-  }
-  .project_main_div {
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-  }
-  .projectstwo {
-    height: auto;
-    gap: 5px;
-    overflow-x: hidden;
-  }
-
-  .mainfooter {
-    gap: 30px;
-    margin-bottom: 100px;
-  }
-  .main_footer_left {
-    width: 100%;
-    height: 40%;
-  }
-  .main_footer_right {
-    width: 100%;
-    display: flex;
-  }
-  .footer h1 {
-    /* color: orangered; */
-    font-size: 25px;
-  }
-
-  .footer p {
-    font-size: 14px;
-    color: white;
-  }
-
-  #button {
-    border: none;
-    position: relative;
-    width: 160px;
-    height: 63px;
-    /* padding: 0; */
-    /* z-index: 2; */
-    transform: translateY(6px);
-  }
-  .nav_list li {
-    display: none;
-    overflow-x: hidden;
-  }
-  .cardsocial {
-    width: 90vw;
-  }
-  .form {
-    width: 90vw;
-    height: 40vh;
+  @keyframes heroDropShadow {
+    0% {
+      filter: drop-shadow(0px 0px 20px #1b2735);
+      /* filter: brightness(90%); */
+    }
+    50% {
+      filter: drop-shadow(0px 0px 80px #1b2735);
+      /* filter: brightness(100%); */
+    }
+    100% {
+      filter: drop-shadow(0px 0px 20px #1b2735);
+      /* filter: brightness(90%); */
+    }
   }
 }
-
 /* *********************Scroll  bar *********************** */
 
 ::-webkit-scrollbar {

@@ -616,7 +616,7 @@ html {
 .star {
   --star-color: white;
   --star-tail-length: 10em;
-  --star-tail-height: 1px;
+  --star-tail-height: 0.8px;
   --star-width: calc(var(--star-tail-length) / 6);
   --fall-duration: 12s;
   --tail-fade-duration: var(--fall-duration);
